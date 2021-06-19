@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Fat Pen">
+	<link rel="dns-prefetch" href="https://github.githubassets.com">
+	<link rel="dns-prefetch" href="https://avatars.githubusercontent.com">
+	<link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+	<link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+	<title>Fath Pen</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/xterm.min.css" integrity="sha512-iLYuqv+v/P4u9erpk+KM83Ioe/l7SEmr7wB6g+Kg1qmEit8EShDKnKtLHlv2QXUp7GGJhmqDI+1PhJYLTsfb8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+	<div id="terminal"></div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xterm/3.14.5/xterm.min.js" integrity="sha512-2PRgAav8Os8vLcOAh1gSaDoNLe1fAyq8/G3QSdyjFFD+OqNjLeHE/8q4+S4MEZgPsuo+itHopj+hJvqS8XUQ8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript">
+		var ctrlDown = false,
+			ctrlKey = 17,
+			cmdKey = 91,
+			vKey = 86,
+			cKey = 67,
+			lCode = 76,
+			enterKey = 13,
+			backspaceKey = 8;
+
+		document.addEventListener("keydown", function(e){
+			if (e.keyCode == ctrlKey || e.keyCode == cmdKey) ctrlDown = true;
+		});
+
+		document.addEventListener("keyup", function(e){
+			if (e.keyCode == ctrlKey || e.keyCode == cmdKey) ctrlDown = false;
+		});
+
+		var term = new Terminal({
+			cursorBlink: "block"
+		});
+		var line = '';
+		var cmds = [];
+
+		term.open(document.getElementById('terminal'));
+		term.write("fathpen@github.com:~$ ");
+
+		term.prompt = () => {
+			if (line) {
+				result = 'xterm: command not found: ' + line;
+				if (line === 'whoami') {
+					result = 'fathpen';
+				} else if (line === 'hostname') {
+					result = 'github.com';
+				} else if (line === 'help') {
+					term.writeln("Available commands:");
+					term.writeln("whoami");
+					term.writeln("hostname");
+					term.writeln("profile");
+					term.write("fathpen@github.com:~$ ");
+					line = '';
+					return;
+				} else if (line === 'profile') {
+					term.writeln("xdg-open https://github.com/fathpen");
+					line = '';
+					document.location.href='https://github.com/fathpen';
+					return;
+				}
+				term.writeln(result);
+				line = '';
+				term.write("fathpen@github.com:~$ ");
+			}
+		};
+
+		term.on("paste", function(data){
+			line += data;
+			term.write(data);
+		});
+
+		term.on("key", function(key, ev){
+			if (ev.keyCode === enterKey) {
+				if (line) {
+					cmds.push(line);
+					term.writeln("");
+					term.prompt();
+				}
+			} else if (ev.keyCode === backspaceKey) { 
+				if (line) {
+					line = line.slice(0, line.length -1);
+					term.write("\b \b");
+				}
+			} else if (ctrlDown && (ev.keyCode === vKey)) {
+				term.paste();
+			} else if (ctrlDown && (ev.keyCode === lCode)) {
+				term.clear();
+			} else {
+				line += key;
+				term.write(key);
+			}
+		});
+	</script>
+</body>
+</html>
