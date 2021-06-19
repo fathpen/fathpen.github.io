@@ -1,61 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Shortcodes on Fath Pen</title>
-    <link>https://fathpen.github.io/tags/Shortcodes/</link>
-    <description>Recent content in Shortcodes on Fath Pen</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 23 May 2021 20:00:00 +0100</lastBuildDate><atom:link href="https://fathpen.github.io/tags/Shortcodes/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Deployments</title>
-      <link>https://fathpen.github.io/posts/deployments/</link>
-      <pubDate>Sun, 23 May 2021 20:00:00 +0100</pubDate>
-      
-      <guid>https://fathpen.github.io/posts/deployments/</guid>
-      <description>Netlify Subdirectories     Netlify    There are several ways to deploy your site with this theme on Netlify. Regardless of which solution you choose, the main goal is to ensure that the prebuilt theme release tarball is used or to run the required commands to prepare the theme assets before running the Hugo build command.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shortcodes on Fath Pen</title><link>https://fathpen.github.io/tags/Shortcodes/</link><description>Recent content in Shortcodes on Fath Pen</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sun, 23 May 2021 20:00:00 +0100</lastBuildDate><atom:link href="https://fathpen.github.io/tags/Shortcodes/index.xml" rel="self" type="application/rss+xml"/><item><title>Deployments</title><link>https://fathpen.github.io/posts/deployments/</link><pubDate>Sun, 23 May 2021 20:00:00 +0100</pubDate><guid>https://fathpen.github.io/posts/deployments/</guid><description>Netlify Subdirectories Netlify There are several ways to deploy your site with this theme on Netlify. Regardless of which solution you choose, the main goal is to ensure that the prebuilt theme release tarball is used or to run the required commands to prepare the theme assets before running the Hugo build command.
 Here are some possible solutions:
-Use a Makefile:</description>
-    </item>
-    
-    <item>
-      <title>Shortcodes</title>
-      <link>https://fathpen.github.io/posts/shortcodes/</link>
-      <pubDate>Sun, 23 May 2021 20:00:00 +0100</pubDate>
-      
-      <guid>https://fathpen.github.io/posts/shortcodes/</guid>
-      <description>&lt;!-- markdownlint-disable MD024 --&gt;
-&lt;p&gt;The theme bundles some handy shortcodes that tries to cover common situations.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Mermaid</title>
-      <link>https://fathpen.github.io/posts/mermaid/</link>
-      <pubDate>Sun, 23 May 2021 20:00:00 +0100</pubDate>
-      
-      <guid>https://fathpen.github.io/posts/mermaid/</guid>
-      <description>&lt;p&gt;&lt;a class=&#34;gblog-markdown__link&#34; href=&#34;https://mermaidjs.github.io/&#34;&gt;Mermaid&lt;/a&gt; is library for generating SVG charts and diagrams from text.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ToC</title>
-      <link>https://fathpen.github.io/posts/toc/</link>
-      <pubDate>Sun, 23 May 2021 20:00:00 +0100</pubDate>
-      
-      <guid>https://fathpen.github.io/posts/toc/</guid>
-      <description>Simple wrapper to generate a page Table of Content from a shortcode.
-{{&amp;lt; toc &amp;gt;}}    Level 1 Level 2  Level 2.1  Level 2.1.1  Level 2.1.1.1  Level 2.1.1.1.1       Level 2.2       Level 1    Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclimates investiture. Ornateness bland it ex enc, est yeti am bongo detract re.</description>
-    </item>
-    
-    <item>
-      <title>Post with images</title>
-      <link>https://fathpen.github.io/posts/post-with-images/</link>
-      <pubDate>Mon, 22 Jun 2020 20:00:00 +0200</pubDate>
-      
-      <guid>https://fathpen.github.io/posts/post-with-images/</guid>
-      <description>If you need more flexibility for your embedded images, you could use the img shortcode. It is using Hugo&amp;rsquo;s page resources and supports lazy loading of your images.
+Use a Makefile:</description></item><item><title>Shortcodes</title><link>https://fathpen.github.io/posts/shortcodes/</link><pubDate>Sun, 23 May 2021 20:00:00 +0100</pubDate><guid>https://fathpen.github.io/posts/shortcodes/</guid><description>&lt;!-- markdownlint-disable MD024 -->
+&lt;p>The theme bundles some handy shortcodes that tries to cover common situations.&lt;/p></description></item><item><title>Mermaid</title><link>https://fathpen.github.io/posts/mermaid/</link><pubDate>Sun, 23 May 2021 20:00:00 +0100</pubDate><guid>https://fathpen.github.io/posts/mermaid/</guid><description>&lt;p>&lt;a class="gblog-markdown__link" href="https://mermaidjs.github.io/">Mermaid&lt;/a> is library for generating SVG charts and diagrams from text.&lt;/p></description></item><item><title>ToC</title><link>https://fathpen.github.io/posts/toc/</link><pubDate>Sun, 23 May 2021 20:00:00 +0100</pubDate><guid>https://fathpen.github.io/posts/toc/</guid><description>Simple wrapper to generate a page Table of Content from a shortcode.
+{{&amp;lt; toc &amp;gt;}} Level 1 Level 2 Level 2.1 Level 2.1.1 Level 2.1.1.1 Level 2.1.1.1.1 Level 2.2 Level 1 Dolor sit, sumo unique argument um no. Gracie nominal id xiv. Romanesque acclimates investiture. Ornateness bland it ex enc, est yeti am bongo detract re.</description></item><item><title>Post with images</title><link>https://fathpen.github.io/posts/post-with-images/</link><pubDate>Mon, 22 Jun 2020 20:00:00 +0200</pubDate><guid>https://fathpen.github.io/posts/post-with-images/</guid><description>If you need more flexibility for your embedded images, you could use the img shortcode. It is using Hugo&amp;rsquo;s page resources and supports lazy loading of your images.
 Attributes:
-   Name Usage default     name (string) Name of the image resource defined in your front matter. empty   alt (string) Description for displayed image. resource .Title   size (string) Thumbnail size (tiny|small|medium|large). empty   lazy (bool) Enable or disable image lazy loading.</description>
-    </item>
-    
-  </channel>
-</rss>
+Name Usage default name (string) Name of the image resource defined in your front matter. empty alt (string) Description for displayed image. resource .Title size (string) Thumbnail size (tiny|small|medium|large). empty lazy (bool) Enable or disable image lazy loading.</description></item></channel></rss>
