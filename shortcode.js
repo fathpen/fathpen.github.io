@@ -192,15 +192,3 @@ if (window.jQuery) {
     return this;
   };
 }
-
-
-/**
- * ------------------------------------
- * Shortcode
- * ------------------------------------
- */
-new Shortcode(document.querySelectorAll('body'), {
-  code: function(done){
-    return `<pre><code class="language-${this.options.lang}">${this.contents}</code></pre>`;
-  }
-});
